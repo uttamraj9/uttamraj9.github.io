@@ -5,7 +5,11 @@
 <meta charset="UTF-8">
 </head>
 <body>
-  <p id='status'></p>
+  <div>
+    
+      <p id='myresponse'></p>
+
+  </div>
 <script>
 
   function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
@@ -57,6 +61,7 @@
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
+        document.getElementById('myresponse').innerHTML = 'Login Successful !';
     });
   }
 
